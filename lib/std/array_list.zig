@@ -2243,7 +2243,7 @@ test "return OutOfMemory when capacity would exceed maximum usize integer value"
     }
 }
 
-test "ArrayListAligned with non-native alignment compiles unusedCapabitySlice" {
+test "ArrayListAligned with non-native alignment compiles unusedCapacitySlice" {
     var list = ArrayListAligned(u8, 4).init(testing.allocator);
     defer list.deinit();
     try list.appendNTimes(1, 4);
